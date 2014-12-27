@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\andre.hu\AndroidStudioProjects\NCUDormMonitor\app\libs\achartengine-1.1.0.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="9932e3fb9fbe54e80873e77f72a99f79e33b3250">
+        <dex dex="C:\Users\andre.hu\AndroidStudioProjects\NCUDormMonitor\app\build\intermediates\pre-dexed\debug\achartengine-1.1.0-89c0a47c7231fddcd250cbe60ff7713d28a3e308.jar" />
+    </item>
+    <item
+        jar="D:\家銘\備份資料\programs\Android\android-sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\andre.hu\AndroidStudioProjects\NCUDormMonitor\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-86329e3ef3e0159069b068e726a3032b4f7d3ea7.jar" />
+    </item>
+    <item
+        jar="C:\Users\andre.hu\AndroidStudioProjects\NCUDormMonitor\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\19.1.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="af4cc326e6cd92f88db12298767e521743aedd36">
+        <dex dex="C:\Users\andre.hu\AndroidStudioProjects\NCUDormMonitor\app\build\intermediates\pre-dexed\debug\classes-bf5e7c1c870bf9f6d470b516e2797a7e1f65a22f.jar" />
+    </item>
+    <item
+        jar="C:\Users\andre.hu\AndroidStudioProjects\NCUDormMonitor\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\19.1.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="af4cc326e6cd92f88db12298767e521743aedd36">
+        <dex dex="C:\Users\andre.hu\AndroidStudioProjects\NCUDormMonitor\app\build\intermediates\pre-dexed\debug\classes-bf5e7c1c870bf9f6d470b516e2797a7e1f65a22f.jar" />
+    </item>
+    <item
+        jar="D:\家銘\備份資料\programs\Android\android-sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\andre.hu\AndroidStudioProjects\NCUDormMonitor\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-86329e3ef3e0159069b068e726a3032b4f7d3ea7.jar" />
+    </item>
+    <item
+        jar="C:\Users\andre.hu\AndroidStudioProjects\NCUDormMonitor\app\libs\achartengine-1.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9932e3fb9fbe54e80873e77f72a99f79e33b3250">
+        <dex dex="C:\Users\andre.hu\AndroidStudioProjects\NCUDormMonitor\app\build\intermediates\pre-dexed\debug\achartengine-1.1.0-89c0a47c7231fddcd250cbe60ff7713d28a3e308.jar" />
+    </item>
+    <item
+        jar="C:\Users\andre.hu\AndroidStudioProjects\NCUDormMonitor\app\libs\htmlcleaner-2.8.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="8cba4118e2b013ed26c53c654c6039e92fe5e915">
+        <dex dex="C:\Users\andre.hu\AndroidStudioProjects\NCUDormMonitor\app\build\intermediates\pre-dexed\debug\htmlcleaner-2.8-dfc6e36a3b099b121141c8846a870e4cf7fef3d4.jar" />
+    </item>
+    <item
+        jar="C:\Users\andre.hu\AndroidStudioProjects\NCUDormMonitor\app\libs\htmlcleaner-2.8.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8cba4118e2b013ed26c53c654c6039e92fe5e915">
+        <dex dex="C:\Users\andre.hu\AndroidStudioProjects\NCUDormMonitor\app\build\intermediates\pre-dexed\debug\htmlcleaner-2.8-dfc6e36a3b099b121141c8846a870e4cf7fef3d4.jar" />
+    </item>
+
+</items>
