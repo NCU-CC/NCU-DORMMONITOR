@@ -1,0 +1,5 @@
+C:\Users\andre.hu\AndroidStudioProjects\NCUDormMonitor\app\build\intermediates\classes\release
+C:\Users\andre.hu\AndroidStudioProjects\NCUDormMonitor\app\build\intermediates\pre-dexed\release\classes-bf5e7c1c870bf9f6d470b516e2797a7e1f65a22f.jar
+C:\Users\andre.hu\AndroidStudioProjects\NCUDormMonitor\app\build\intermediates\pre-dexed\release\achartengine-1.1.0-89c0a47c7231fddcd250cbe60ff7713d28a3e308.jar
+C:\Users\andre.hu\AndroidStudioProjects\NCUDormMonitor\app\build\intermediates\pre-dexed\release\htmlcleaner-2.8-dfc6e36a3b099b121141c8846a870e4cf7fef3d4.jar
+C:\Users\andre.hu\AndroidStudioProjects\NCUDormMonitor\app\build\intermediates\pre-dexed\release\support-v4-19.1.0-86329e3ef3e0159069b068e726a3032b4f7d3ea7.jar
