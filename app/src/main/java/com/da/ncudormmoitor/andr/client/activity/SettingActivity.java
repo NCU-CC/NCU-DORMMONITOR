@@ -18,6 +18,8 @@ import android.widget.CheckedTextView;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import java.math.BigInteger;
+
 public class SettingActivity extends Activity {
 
 	final static public int INTENT_FLAG = 255;

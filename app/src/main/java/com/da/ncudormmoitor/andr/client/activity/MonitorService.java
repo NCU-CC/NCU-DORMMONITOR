@@ -194,7 +194,7 @@ public class MonitorService extends Service {
 						getString(R.string.noti_content2), contentIntent);
 				notificationManager.notify(0, noti);
 			}
-		} else if (flag == 3) { // IP或網路錯誤通知
+		} else if (flag == 3) { //
 			if (mIsLock) {
 				Intent notificationIntent = new Intent(this, MainActivity.class);
 				PendingIntent contentIntent = PendingIntent.getActivity(this,

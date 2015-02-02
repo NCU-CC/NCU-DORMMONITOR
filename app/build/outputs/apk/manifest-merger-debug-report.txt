@@ -45,39 +45,41 @@ MERGED from com.android.support:gridlayout-v7:19.1.0:19:5
 		ADDED from AndroidManifest.xml:18:9
 activity#com.da.ncudormmoitor.andr.client.activity.MainActivity
 ADDED from AndroidManifest.xml:19:9
-	android:label
-		ADDED from AndroidManifest.xml:21:13
-	android:name
+	android:screenOrientation
 		ADDED from AndroidManifest.xml:20:13
+	android:label
+		ADDED from AndroidManifest.xml:22:13
+	android:name
+		ADDED from AndroidManifest.xml:21:13
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:22:13
+ADDED from AndroidManifest.xml:23:13
 action#android.intent.action.MAIN
-ADDED from AndroidManifest.xml:23:17
+ADDED from AndroidManifest.xml:24:17
 	android:name
-		ADDED from AndroidManifest.xml:23:25
+		ADDED from AndroidManifest.xml:24:25
 category#android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:25:17
+ADDED from AndroidManifest.xml:26:17
 	android:name
-		ADDED from AndroidManifest.xml:25:27
+		ADDED from AndroidManifest.xml:26:27
 service#com.da.ncudormmoitor.andr.client.activity.MonitorService
-ADDED from AndroidManifest.xml:29:9
+ADDED from AndroidManifest.xml:30:9
 	android:name
-		ADDED from AndroidManifest.xml:29:18
+		ADDED from AndroidManifest.xml:30:18
 activity#com.da.ncudormmoitor.andr.client.activity.SettingActivity
-ADDED from AndroidManifest.xml:32:9
+ADDED from AndroidManifest.xml:33:9
 	android:label
+		ADDED from AndroidManifest.xml:35:13
+	android:name
 		ADDED from AndroidManifest.xml:34:13
-	android:name
-		ADDED from AndroidManifest.xml:33:13
 activity#com.da.ncudormmoitor.andr.client.activity.DetailActivity
-ADDED from AndroidManifest.xml:36:9
+ADDED from AndroidManifest.xml:37:9
 	android:label
+		ADDED from AndroidManifest.xml:39:13
+	android:name
 		ADDED from AndroidManifest.xml:38:13
-	android:name
-		ADDED from AndroidManifest.xml:37:13
 activity#com.da.ncudormmoitor.andr.client.activity.DiagramActivity
-ADDED from AndroidManifest.xml:40:9
+ADDED from AndroidManifest.xml:41:9
 	android:label
-		ADDED from AndroidManifest.xml:42:13
+		ADDED from AndroidManifest.xml:43:13
 	android:name
-		ADDED from AndroidManifest.xml:41:13
+		ADDED from AndroidManifest.xml:42:13

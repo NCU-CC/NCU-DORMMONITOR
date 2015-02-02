@@ -214,7 +214,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 				} else {
 					// 四個總流量(用大單位表示)
 					downloadView.setText(byteToProperUnit(intent
-							.getStringExtra(Config.INTENT_DOWNLOAD)));
+                            .getStringExtra(Config.INTENT_DOWNLOAD)));
 					downloadAllView.setText(byteToProperUnit(intent
 							.getStringExtra(Config.INTENT_DOWNLOAD_ALL)));
 					uploadAllView.setText(byteToProperUnit(intent
@@ -235,6 +235,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
 							Config.INTENT_STATE_SAFE)) { // 安全的情況
 						stateView.setText(R.string.main_state_safe);
 						stateView.setTextColor(Color.GREEN);
+                        uploadView.setBackgroundColor(Color.rgb(255, 255, 187));
+                        uploadViewInByte.setBackgroundColor(Color.rgb(255, 255, 187));
 						//reConnectButton.setVisibility(View.INVISIBLE);
 					} else if (intent.getStringExtra(Config.INTENT_SAFETY)
 							.equals(Config.INTENT_STATE_DANGEROUS)) { // 有危險的情況
@@ -251,10 +253,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
                         //stateView.append(String.format("%.1f", settings.getFloat(Config.PREF_UpperBoundary, 2))+"G.");//@edited
 						stateView.setTextColor(Color.rgb(255, 69, 0));
 						uploadView.setBackgroundColor(Color.rgb(255, 69, 0));
+                        uploadViewInByte.setBackgroundColor(Color.rgb(255, 69, 0));
 					} else if (intent.getStringExtra(Config.INTENT_SAFETY)
 							.equals("Not connect")) {
 						stateView.setText(R.string.main_state_error);
 						stateView.setTextColor(Color.GRAY);
+                        uploadView.setBackgroundColor(Color.rgb(255, 255, 187));
+                        uploadViewInByte.setBackgroundColor(Color.rgb(255, 255, 187));
 						reConnectButton.setVisibility(View.VISIBLE);
 						Intent stopIntent = new Intent(MainActivity.this,
 								MonitorService.class);
@@ -264,6 +269,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 								.getStringExtra(Config.INTENT_LOCK_MSG));
 						stateView.setTextColor(Color.RED);
 						uploadView.setBackgroundColor(Color.RED);
+                        uploadViewInByte.setBackgroundColor(Color.RED);
 					}
 					stateView.append("(" + getDateTime() + ")");
 				}
@@ -345,10 +351,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
 				upload = Long.parseLong(tempUpload);
 				Log.d("MainActivity.RefreshTask.upload", upload + "");
 
+                Log.e("debug", String.valueOf(isLock));
+
 				if (isLock) { // 鎖網的情況
 					stateView.setText(lockMsg);
 					stateView.setTextColor(Color.RED);
 					uploadView.setBackgroundColor(Color.RED);
+                    uploadViewInByte.setBackgroundColor(Color.RED);
 				} else if (upload >= upperBoundary) { // 有危險的情況
 					stateView.setText(R.string.main_state_dangerous);
                     if(upperBoundary>1048576000){
@@ -362,9 +371,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
 					//stateView.append(String.format("%.1f", settings.getFloat(Config.PREF_UpperBoundary, 2))+"G.");//@edited
 					stateView.setTextColor(Color.rgb(255, 69, 0));
 					uploadView.setBackgroundColor(Color.rgb(255, 69, 0));
+                    uploadViewInByte.setBackgroundColor(Color.rgb(255, 69, 0));
 				} else { // 安全的情況
 					stateView.setText(R.string.main_state_safe);
 					stateView.setTextColor(Color.GREEN);
+                    uploadView.setBackgroundColor(Color.rgb(255, 255, 187));
+                    uploadViewInByte.setBackgroundColor(Color.rgb(255, 255, 187));
 					//reConnectButton.setVisibility(View.INVISIBLE);
 				}
                 try{
