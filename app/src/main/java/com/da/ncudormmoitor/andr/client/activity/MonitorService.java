@@ -170,13 +170,16 @@ public class MonitorService extends Service {
 				PendingIntent contentIntent = PendingIntent.getActivity(this,
 						0, notificationIntent, 0);
 				NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-				Notification noti = new Notification();
-				noti.icon = R.drawable.ic_launcher;
-				noti.tickerText = getString(R.string.noti_tickerText);
-				noti.defaults = Notification.DEFAULT_ALL;
-				noti.setLatestEventInfo(mContext,
-						getString(R.string.noti_title),
-						getString(R.string.noti_content), contentIntent);
+                Notification noti = new Notification.Builder(mContext)
+                        .setContentIntent(contentIntent)
+                        .setSmallIcon(R.drawable.ic_launcher)
+                        .setTicker(getString(R.string.noti_tickerText))
+                        .setDefaults(Notification.DEFAULT_ALL)
+                        .setAutoCancel(true)
+                        .setContentTitle(getString(R.string.noti_title))
+                        .setContentText(getString(R.string.noti_content))
+                        .setWhen(System.currentTimeMillis())
+                        .build();
 				notificationManager.notify(0, noti);
 			}
 		} else if (flag == 2) { // IP或網路錯誤通知
@@ -185,13 +188,16 @@ public class MonitorService extends Service {
 				PendingIntent contentIntent = PendingIntent.getActivity(this,
 						0, notificationIntent, 0);
 				NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-				Notification noti = new Notification();
-				noti.icon = R.drawable.ic_launcher;
-				noti.tickerText = getString(R.string.noti_tickerText2);
-				noti.defaults = Notification.DEFAULT_ALL;
-				noti.setLatestEventInfo(mContext,
-						getString(R.string.noti_title2),
-						getString(R.string.noti_content2), contentIntent);
+                Notification noti = new Notification.Builder(mContext)
+                        .setContentIntent(contentIntent)
+                        .setSmallIcon(R.drawable.ic_launcher)
+                        .setTicker(getString(R.string.noti_tickerText2))
+                        .setDefaults(Notification.DEFAULT_ALL)
+                        .setContentTitle(getString(R.string.noti_title2))
+                        .setContentText(getString(R.string.noti_content2))
+                        .setWhen(System.currentTimeMillis())
+                        .setAutoCancel(true)
+                        .build();
 				notificationManager.notify(0, noti);
 			}
 		} else if (flag == 3) { //
@@ -200,13 +206,16 @@ public class MonitorService extends Service {
 				PendingIntent contentIntent = PendingIntent.getActivity(this,
 						0, notificationIntent, 0);
 				NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-				Notification noti = new Notification();
-				noti.icon = R.drawable.ic_launcher;
-				noti.tickerText = getString(R.string.noti_tickerText3);
-				noti.defaults = Notification.DEFAULT_ALL;
-				noti.setLatestEventInfo(mContext,
-						getString(R.string.noti_title3),
-						getString(R.string.noti_content3), contentIntent);
+                          Notification noti = new Notification.Builder(mContext)
+                        .setContentIntent(contentIntent)
+                        .setSmallIcon(R.drawable.ic_launcher)
+                        .setTicker(getString(R.string.noti_tickerText3))
+                        .setDefaults(Notification.DEFAULT_ALL)
+                        .setContentTitle(getString(R.string.noti_title3))
+                        .setContentText(getString(R.string.noti_content3))
+                        .setWhen(System.currentTimeMillis())
+                        .setAutoCancel(true)
+                        .build();
 				notificationManager.notify(0, noti);
 			}
 		}

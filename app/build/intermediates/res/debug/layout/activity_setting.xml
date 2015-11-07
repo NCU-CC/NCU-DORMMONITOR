@@ -123,4 +123,4 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView3" />
 
-</RelativeLayout><!-- From: file:/C:/Users/andre.hu/AndroidStudioProjects/NCUDormMonitor/app/src/main/res/layout/activity_setting.xml -->
+</RelativeLayout><!-- From: file:/D:/Android/AndroidStudioProjects/NCU-DORMMONITOR/app/src/main/res/layout/activity_setting.xml -->

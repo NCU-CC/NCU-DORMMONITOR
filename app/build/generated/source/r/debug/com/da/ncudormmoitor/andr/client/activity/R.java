@@ -43,7 +43,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int layout_column=0x7f010009;
+        public static final int layout_column=0x7f01000a;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -51,7 +51,15 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int layout_columnSpan=0x7f01000a;
+        public static final int layout_columnSpan=0x7f01000b;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_columnWeight=0x7f01000c;
         /** <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -74,7 +82,7 @@ containing a value of this type.
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
          */
-        public static final int layout_gravity=0x7f01000b;
+        public static final int layout_gravity=0x7f01000d;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -91,6 +99,14 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int layout_rowSpan=0x7f010008;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_rowWeight=0x7f010009;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -401,9 +417,11 @@ containing a value of this type.
            <tr><td><code>{@link #GridLayout_Layout_android_layout_width android:layout_width}</code></td><td></td></tr>
            <tr><td><code>{@link #GridLayout_Layout_layout_column com.da.ncudormmoitor.andr.client.activity:layout_column}</code></td><td></td></tr>
            <tr><td><code>{@link #GridLayout_Layout_layout_columnSpan com.da.ncudormmoitor.andr.client.activity:layout_columnSpan}</code></td><td></td></tr>
+           <tr><td><code>{@link #GridLayout_Layout_layout_columnWeight com.da.ncudormmoitor.andr.client.activity:layout_columnWeight}</code></td><td></td></tr>
            <tr><td><code>{@link #GridLayout_Layout_layout_gravity com.da.ncudormmoitor.andr.client.activity:layout_gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #GridLayout_Layout_layout_row com.da.ncudormmoitor.andr.client.activity:layout_row}</code></td><td></td></tr>
            <tr><td><code>{@link #GridLayout_Layout_layout_rowSpan com.da.ncudormmoitor.andr.client.activity:layout_rowSpan}</code></td><td></td></tr>
+           <tr><td><code>{@link #GridLayout_Layout_layout_rowWeight com.da.ncudormmoitor.andr.client.activity:layout_rowWeight}</code></td><td></td></tr>
            </table>
            @see #GridLayout_Layout_android_layout_height
            @see #GridLayout_Layout_android_layout_margin
@@ -414,14 +432,17 @@ containing a value of this type.
            @see #GridLayout_Layout_android_layout_width
            @see #GridLayout_Layout_layout_column
            @see #GridLayout_Layout_layout_columnSpan
+           @see #GridLayout_Layout_layout_columnWeight
            @see #GridLayout_Layout_layout_gravity
            @see #GridLayout_Layout_layout_row
            @see #GridLayout_Layout_layout_rowSpan
+           @see #GridLayout_Layout_layout_rowWeight
          */
         public static final int[] GridLayout_Layout = {
             0x010100f4, 0x010100f5, 0x010100f6, 0x010100f7,
             0x010100f8, 0x010100f9, 0x010100fa, 0x7f010007,
-            0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b
+            0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b,
+            0x7f01000c, 0x7f01000d
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#layout_height}
@@ -478,7 +499,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.da.ncudormmoitor.andr.client.activity:layout_column
         */
-        public static final int GridLayout_Layout_layout_column = 9;
+        public static final int GridLayout_Layout_layout_column = 10;
         /**
           <p>This symbol is the offset where the {@link com.da.ncudormmoitor.andr.client.activity.R.attr#layout_columnSpan}
           attribute's value can be found in the {@link #GridLayout_Layout} array.
@@ -492,7 +513,21 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.da.ncudormmoitor.andr.client.activity:layout_columnSpan
         */
-        public static final int GridLayout_Layout_layout_columnSpan = 10;
+        public static final int GridLayout_Layout_layout_columnSpan = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.da.ncudormmoitor.andr.client.activity.R.attr#layout_columnWeight}
+          attribute's value can be found in the {@link #GridLayout_Layout} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.da.ncudormmoitor.andr.client.activity:layout_columnWeight
+        */
+        public static final int GridLayout_Layout_layout_columnWeight = 12;
         /**
           <p>This symbol is the offset where the {@link com.da.ncudormmoitor.andr.client.activity.R.attr#layout_gravity}
           attribute's value can be found in the {@link #GridLayout_Layout} array.
@@ -521,7 +556,7 @@ containing a value of this type.
 </table>
           @attr name com.da.ncudormmoitor.andr.client.activity:layout_gravity
         */
-        public static final int GridLayout_Layout_layout_gravity = 11;
+        public static final int GridLayout_Layout_layout_gravity = 13;
         /**
           <p>This symbol is the offset where the {@link com.da.ncudormmoitor.andr.client.activity.R.attr#layout_row}
           attribute's value can be found in the {@link #GridLayout_Layout} array.
@@ -550,5 +585,19 @@ containing a value of this type.
           @attr name com.da.ncudormmoitor.andr.client.activity:layout_rowSpan
         */
         public static final int GridLayout_Layout_layout_rowSpan = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.da.ncudormmoitor.andr.client.activity.R.attr#layout_rowWeight}
+          attribute's value can be found in the {@link #GridLayout_Layout} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.da.ncudormmoitor.andr.client.activity:layout_rowWeight
+        */
+        public static final int GridLayout_Layout_layout_rowWeight = 9;
     };
 }
